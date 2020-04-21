@@ -5,6 +5,11 @@ const plugin = require("../index.js");
 
 pluginTester({
   plugin: plugin,
+  fixtures: __dirname + "/fixtures/polyfill"
+});
+
+pluginTester({
+  plugin: plugin,
   fixtures: __dirname + "/fixtures/vanilla"
 });
 
